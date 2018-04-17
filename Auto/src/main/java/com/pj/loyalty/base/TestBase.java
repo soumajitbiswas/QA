@@ -59,7 +59,7 @@ public class TestBase {
 			else if(browserName.equals("FF")){
 				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
 						+"/src/main/java/com/pj/loyalty/config/geckodriver_Mac64");	
-				driver = new FirefoxDriver(); 
+				driver = new FirefoxDriver(); 	
 			}
 		}
 			
