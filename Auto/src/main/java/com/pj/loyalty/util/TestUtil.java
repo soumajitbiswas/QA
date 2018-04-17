@@ -47,13 +47,10 @@ public class TestUtil extends TestBase{
 		}
 		sheet = book.getSheet(sheetName);
 		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
-		// System.out.println(sheet.getLastRowNum() + "--------" +
-		// sheet.getRow(0).getLastCellNum());
 		for (int i = 0; i < sheet.getLastRowNum(); i++) {
 			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
 				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
-				// System.out.println(data[i][k]);
-			}
+				}
 		}
 		return data;
 	}
@@ -66,7 +63,21 @@ public class TestUtil extends TestBase{
 		
 		}
 	
-
+	public static String getOS(){
+		
+		String Os= System.getProperty("os.name").toLowerCase();
+		 if (Os.indexOf("mac")>=0){
+			 return "mac";
+		 }else return "win";
+		 
+	}
+	
+	public static String getBit(){
+		String Arc= System.getProperty("os.arch").toLowerCase();
+		if(Arc.endsWith("64"))
+		return "64";	
+		else return "32";		
+	}
 	
 
 }

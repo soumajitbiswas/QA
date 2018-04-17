@@ -36,15 +36,34 @@ public class TestBase {
 	public static void initialization(){
 		String browserName = prop.getProperty("browser");
 		
-		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
-					+"/src/main/java/com/pj/loyalty/config/chromedriver_Win32");	
-			driver = new ChromeDriver(); 
+		if(TestUtil.getOS().equals("win") && TestUtil.getBit().equals("32"))
+		{
+			if(browserName.equals("chrome")){
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
+						+"/src/main/java/com/pj/loyalty/config/chromedriver_Win32");	
+				driver = new ChromeDriver(); 
+			}
+			else if(browserName.equals("FF")){
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
+						+"/src/main/java/com/pj/loyalty/config/geckodriver_Win32");	
+				driver = new FirefoxDriver(); 
+			}
+			
+		}else if(TestUtil.getOS().equals("mac"))
+		{
+			if(browserName.equals("chrome")){
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
+						+"/src/main/java/com/pj/loyalty/config/chromedriver_Mac64");	
+				driver = new ChromeDriver(); 
+			}
+			else if(browserName.equals("FF")){
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
+						+"/src/main/java/com/pj/loyalty/config/geckodriver_Mac64");	
+				driver = new FirefoxDriver(); 
+			}
 		}
-		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", "/Users/naveenkhunteta/Documents/SeleniumServer/geckodriver");	
-			driver = new FirefoxDriver(); 
-		}
+			
+			
 		
 		
 		e_driver = new EventFiringWebDriver(driver);
