@@ -18,8 +18,8 @@ import com.pj.loyalty.base.TestBase;
 
 public class TestUtil extends TestBase{
 	
-	public static String TESTDATA_SHEET_PATH = "/Users/soumajitbiswas/git/QA/Automation/src/main/java/"
-												+"com/pj/loyalty/testdata/TestData.xls";
+	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir")
+			+"/src/main/java/com/pj/loyalty/testdata/TestData.xls";
 	
 	static Workbook book;
 	static Sheet sheet;
