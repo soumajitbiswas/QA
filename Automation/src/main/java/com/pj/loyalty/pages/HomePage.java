@@ -33,6 +33,10 @@ public class HomePage extends TestBase{
 		WebElement LoginSbButton=driver.findElement(By.xpath("//input[@type='submit' and @class='button button--green']"));
 		LoginSbButton.click();
 	}
+	public boolean loginStatus()
+	{
+		return driver.findElement(By.xpath("//a[@class='popup-trigger' and @data-track-click='top-nav|Hi,']")).isDisplayed();
+	}
 	
 	public String verifyHomePageTitle(){
 		return driver.getTitle();
@@ -66,7 +70,7 @@ public class HomePage extends TestBase{
 		if(localeTextElement.getText().equalsIgnoreCase("Choose Your Language"))
 			localeText="English";
 		else if(localeTextElement.getText().equalsIgnoreCase("Elige tu idioma"))
-			localeText="English";
+			localeText="Spanish";
 		return localeText;
 	}
 	
