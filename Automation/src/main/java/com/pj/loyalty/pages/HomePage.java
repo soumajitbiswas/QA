@@ -48,24 +48,21 @@ public class HomePage extends TestBase{
 	}
 	
 	public void selectSpanishLocale() {
-		Actions builder1= new Actions(driver);
-		builder1.click(LocaleLink).build().perform();
-		WebElement spanishLink=driver.findElement(By.xpath("///div/ul/li/a[text()='Español']"));
+		LocaleLink.click();
+		WebElement spanishLink=driver.findElement(By.xpath("//div/ul/li/a[text()='Español']"));
 		spanishLink.click();
 		//h3[text()='Choose Your Language']
 	}
 	public void selectEnglishLocale() {
-		Actions builder2= new Actions(driver);
-		builder2.click(LocaleLink).build().perform();
-		WebElement englishLink=driver.findElement(By.xpath("///div/ul/li/a[text()='English']"));
+		LocaleLink.click();
+		WebElement englishLink=driver.findElement(By.xpath("//div/ul/li/a[text()='English']"));
 		englishLink.click();
 		//h3[text()='Choose Your Language']
 	}
 	
 	public String getLocaleName() {
 		String localeText = null;
-		Actions builder3= new Actions(driver);
-		builder3.click(LocaleLink).build().perform();
+		LocaleLink.click();
 		WebElement localeTextElement=driver.findElement(By.xpath("//div[@id='popup-lang']/h3[@class='h4 title']"));
 		if(localeTextElement.getText().equalsIgnoreCase("Choose Your Language"))
 			localeText="English";

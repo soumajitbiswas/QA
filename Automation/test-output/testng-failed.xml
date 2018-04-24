@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Papa Johns Test Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.pj.loyalty.util.ExtentReporterNG"/>
+  </listeners>
+  <test name="Papa Johns Test Cases(failed)">
+    <classes>
+      <class name="com.pj.loyalty.testcases.HomePageTestCase">
+        <methods>
+          <include name="verifyLoginTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.pj.loyalty.testcases.HomePageTestCase -->
+    </classes>
+  </test> <!-- Papa Johns Test Cases(failed) -->
+</suite> <!-- Failed suite [Papa Johns Test Automation Test Suite] -->

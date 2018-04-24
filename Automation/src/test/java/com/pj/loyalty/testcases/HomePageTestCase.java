@@ -35,18 +35,20 @@ public class HomePageTestCase extends TestBase{
 	
 	@Test(priority=2)
 	public void verifyHomePageEnglishTitleTest(){
+		homePage.selectEnglishLocale();
 		String PageTitle=homePage.verifyHomePageTitle();
 		Assert.assertEquals(PageTitle,"Papa John's Pizza | Order for Delivery or Carryout","Home page title not matched for English");
 	}
 	
 	@Test(priority=3)
 	public void verifySpanishLocale(){
-		homePage.selectSpanishLocale();;
+		homePage.selectSpanishLocale();
 		Assert.assertEquals(homePage.getLocaleName(),"Spanish","Locale is not set in Spanish");
 	}
 	
 	@Test(priority=4)
 	public void verifyHomePageSpanishTitleTest(){
+		homePage.selectSpanishLocale();
 		String PageTitle=homePage.verifyHomePageTitle();
 		Assert.assertEquals(PageTitle,"Papa John's Pizza | Pide para entrega o para llevar","Home page title not matched for Spanish");
 	}
