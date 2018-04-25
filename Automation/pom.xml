@@ -12,12 +12,18 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
-
    <dependencies>
+  
+   <dependency> 
+	   <groupId>com.apple</groupId> 
+	   <artifactId>AppleJavaExtensions</artifactId>
+	   <version>1.4</version>
+   </dependency>
+   
 	<!-- https://mvnrepository.com/artifact/org.apache.directory.studio/org.apache.commons.io -->
 	<dependency>
 	    <groupId>org.apache.directory.studio</groupId>
