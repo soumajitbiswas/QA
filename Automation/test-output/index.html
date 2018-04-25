@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">6 methods, 3 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,16 @@
                       <a href="#" panel-name="suite-Papa_Johns_Test_Automation_Test_Suite" class="show-methods failed suite-Papa_Johns_Test_Automation_Test_Suite"> (show)</a> <!-- show-methods failed suite-Papa_Johns_Test_Automation_Test_Suite -->
                     </span>
                     <div class="method-list-content failed suite-Papa_Johns_Test_Automation_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Papa_Johns_Test_Automation_Test_Suite" title="com.pj.loyalty.testcases.HomePageTestCase" hash-for-method="verifyEnglishLocale">verifyEnglishLocale</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Papa_Johns_Test_Automation_Test_Suite" title="com.pj.loyalty.testcases.HomePageTestCase" hash-for-method="verifyLoginTest(soumajit.biswas@outlook.com, India@123)">verifyLoginTest(soumajit.biswas@outlook.com, India@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Papa_Johns_Test_Automation_Test_Suite" title="com.pj.loyalty.testcases.HomePageTestCase" hash-for-method="verifyLoginTest(soumajit.biswas@outlook.com, India@12)">verifyLoginTest(soumajit.biswas@outlook.com, India@12)</a> <!-- method navigator-link -->
@@ -116,22 +126,12 @@
                     <div class="method-list-content passed suite-Papa_Johns_Test_Automation_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Papa_Johns_Test_Automation_Test_Suite" title="com.pj.loyalty.testcases.HomePageTestCase" hash-for-method="verifyEnglishLocale">verifyEnglishLocale</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Papa_Johns_Test_Automation_Test_Suite" title="com.pj.loyalty.testcases.HomePageTestCase" hash-for-method="verifyHomePageEnglishTitleTest">verifyHomePageEnglishTitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Papa_Johns_Test_Automation_Test_Suite" title="com.pj.loyalty.testcases.HomePageTestCase" hash-for-method="verifyHomePageSpanishTitleTest">verifyHomePageSpanishTitleTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Papa_Johns_Test_Automation_Test_Suite" title="com.pj.loyalty.testcases.HomePageTestCase" hash-for-method="verifyLoginTest(soumajit.biswas@outlook.com, India@123)">verifyLoginTest(soumajit.biswas@outlook.com, India@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,39 +159,785 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyEnglishLocale">
+                  </a> <!-- verifyEnglishLocale -->
+                  <span class="method-name">verifyEnglishLocale</span>
+                  <div class="stack-trace">java.lang.StackOverflowError
+	at sun.nio.cs.StreamEncoder.write(StreamEncoder.java:125)
+	at java.io.OutputStreamWriter.write(OutputStreamWriter.java:207)
+	at java.io.BufferedWriter.flushBuffer(BufferedWriter.java:129)
+	at java.io.PrintStream.write(PrintStream.java:526)
+	at java.io.PrintStream.print(PrintStream.java:669)
+	at java.io.PrintStream.println(PrintStream.java:806)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:55)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.getScreenshotAs(EventFiringWebDriver.java:288)
+	at com.pj.loyalty.util.TestUtil.takeScreenshotAtEndOfTest(TestUtil.java:57)
+	at com.pj.loyalty.util.WebEventListener.onException(WebEventListener.java:57)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$1.invoke(EventFiringWebDriver.java:82)
+	at com.sun.proxy.$Proxy7.onException(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:107)
+	at com.sun.proxy.$Proxy8.getScreenshotAs(Unknown Source)
+... Removed 306 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginTest(soumajit.biswas@outlook.com, India@123)">
+                  </a> <!-- verifyLoginTest(soumajit.biswas@outlook.com, India@123) -->
+                  <span class="method-name">verifyLoginTest</span>
+                  <span class="parameters">(soumajit.biswas@outlook.com, India@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.UnsupportedCommandException: mouseMoveTo
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;Soumajits-MacBook-Pro.local&apos;, ip: &apos;2601:243:1500:f58d:0:0:0:7275&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:222)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:119)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:35)
+	at org.openqa.selenium.remote.RemoteMouse.mouseMove(RemoteMouse.java:89)
+	at org.openqa.selenium.support.events.internal.EventFiringMouse.mouseMove(EventFiringMouse.java:58)
+	at org.openqa.selenium.interactions.internal.MouseAction.moveToLocation(MouseAction.java:75)
+	at org.openqa.selenium.interactions.ClickAction.perform(ClickAction.java:39)
+	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
+	at com.pj.loyalty.pages.HomePage.Login(HomePage.java:28)
+	at com.pj.loyalty.testcases.HomePageTestCase.verifyLoginTest(HomePageTestCase.java:66)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyLoginTest(soumajit.biswas@outlook.com, India@12)">
                   </a> <!-- verifyLoginTest(soumajit.biswas@outlook.com, India@12) -->
                   <span class="method-name">verifyLoginTest</span>
                   <span class="parameters">(soumajit.biswas@outlook.com, India@12)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@class=&apos;popup-trigger&apos; and @data-track-click=&apos;top-nav|Hi,&apos;]&quot;}
-  (Session info: chrome=65.0.3325.181)
-  (Driver info: chromedriver=2.38.552518 (183d19265345f54ce39cbb94cf81ba5f15905011),platform=Mac OS X 10.13.4 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+                  <div class="stack-trace">org.openqa.selenium.UnsupportedCommandException: mouseMoveTo
 Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
 System info: host: &apos;Soumajits-MacBook-Pro.local&apos;, ip: &apos;2601:243:1500:f58d:0:0:0:7275&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_131&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=MAC, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552518 (183d19265345f54ce39cbb94cf81ba5f15905011), userDataDir=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/.org.chromium.Chromium.xj02fG}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=65.0.3325.181, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 9d60fd1df24f6e06e596bf6712270d76
-*** Element info: {Using=xpath, value=//a[@class=&apos;popup-trigger&apos; and @data-track-click=&apos;top-nav|Hi,&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:222)
+	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:119)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
-	at com.pj.loyalty.pages.HomePage.loginStatus(HomePage.java:38)
-	at com.pj.loyalty.testcases.HomePageTestCase.verifyLoginTest(HomePageTestCase.java:67)
-... Removed 32 stack frames
+	at org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:35)
+	at org.openqa.selenium.remote.RemoteMouse.mouseMove(RemoteMouse.java:89)
+	at org.openqa.selenium.support.events.internal.EventFiringMouse.mouseMove(EventFiringMouse.java:58)
+	at org.openqa.selenium.interactions.internal.MouseAction.moveToLocation(MouseAction.java:75)
+	at org.openqa.selenium.interactions.ClickAction.perform(ClickAction.java:39)
+	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
+	at com.pj.loyalty.pages.HomePage.Login(HomePage.java:28)
+	at com.pj.loyalty.testcases.HomePageTestCase.verifyLoginTest(HomePageTestCase.java:66)
+... Removed 25 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -205,13 +951,6 @@ Session ID: 9d60fd1df24f6e06e596bf6712270d76
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyEnglishLocale">
-                  </a> <!-- verifyEnglishLocale -->
-                  <span class="method-name">verifyEnglishLocale</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="verifyHomePageEnglishTitleTest">
                   </a> <!-- verifyHomePageEnglishTitleTest -->
                   <span class="method-name">verifyHomePageEnglishTitleTest</span>
@@ -222,14 +961,6 @@ Session ID: 9d60fd1df24f6e06e596bf6712270d76
                   <a name="verifyHomePageSpanishTitleTest">
                   </a> <!-- verifyHomePageSpanishTitleTest -->
                   <span class="method-name">verifyHomePageSpanishTitleTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginTest(soumajit.biswas@outlook.com, India@123)">
-                  </a> <!-- verifyLoginTest(soumajit.biswas@outlook.com, India@123) -->
-                  <span class="method-name">verifyLoginTest</span>
-                  <span class="parameters">(soumajit.biswas@outlook.com, India@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -298,34 +1029,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLoginTest')
+data.setCell(0, 1, 'verifyEnglishLocale')
 data.setCell(0, 2, 'com.pj.loyalty.testcases.HomePageTestCase')
-data.setCell(0, 3, 11963);
+data.setCell(0, 3, 12761);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLoginTest')
+data.setCell(1, 1, 'verifySpanishLocale')
 data.setCell(1, 2, 'com.pj.loyalty.testcases.HomePageTestCase')
-data.setCell(1, 3, 4654);
+data.setCell(1, 3, 12253);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyEnglishLocale')
+data.setCell(2, 1, 'verifyHomePageSpanishTitleTest')
 data.setCell(2, 2, 'com.pj.loyalty.testcases.HomePageTestCase')
-data.setCell(2, 3, 3343);
+data.setCell(2, 3, 8852);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifySpanishLocale')
+data.setCell(3, 1, 'verifyHomePageEnglishTitleTest')
 data.setCell(3, 2, 'com.pj.loyalty.testcases.HomePageTestCase')
-data.setCell(3, 3, 3134);
+data.setCell(3, 3, 7384);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyHomePageSpanishTitleTest')
+data.setCell(4, 1, 'verifyLoginTest')
 data.setCell(4, 2, 'com.pj.loyalty.testcases.HomePageTestCase')
-data.setCell(4, 3, 2861);
+data.setCell(4, 3, 2510);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyHomePageEnglishTitleTest')
+data.setCell(5, 1, 'verifyLoginTest')
 data.setCell(5, 2, 'com.pj.loyalty.testcases.HomePageTestCase')
-data.setCell(5, 3, 2401);
+data.setCell(5, 3, 632);
 window.suiteTableData['Papa_Johns_Test_Automation_Test_Suite']= { tableData: data, tableDiv: 'times-div-Papa_Johns_Test_Automation_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-Papa_Johns_Test_Automation_Test_Suite">
               </div> <!-- times-div-Papa_Johns_Test_Automation_Test_Suite -->
             </div> <!-- times-div -->
@@ -357,74 +1088,78 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyEnglishLocale</span>
-                <span class="method-start">4716 ms</span>
+                <span class="method-start">13684 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8061 ms</span>
+                <span class="method-start">26539 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">8172 ms</span>
+                <span class="method-start">27958 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageEnglishTitleTest</span>
-                <span class="method-start">15744 ms</span>
+                <span class="method-start">45248 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18146 ms</span>
+                <span class="method-start">52636 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">18246 ms</span>
+                <span class="method-start">55088 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySpanishLocale</span>
-                <span class="method-start">22976 ms</span>
+                <span class="method-start">67355 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26112 ms</span>
+                <span class="method-start">79610 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">26218 ms</span>
+                <span class="method-start">81152 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageSpanishTitleTest</span>
-                <span class="method-start">30816 ms</span>
+                <span class="method-start">94570 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33678 ms</span>
+                <span class="method-start">103425 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">34022 ms</span>
+                <span class="method-start">105848 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyLoginTest(soumajit.biswas@outlook.com, India@12)</span>
-                <span class="method-start">40219 ms</span>
+                <span class="method-start">120754 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">52186 ms</span>
+                <span class="method-start">123272 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">52311 ms</span>
+                <span class="method-start">130976 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyLoginTest(soumajit.biswas@outlook.com, India@123)</span>
-                <span class="method-start">57086 ms</span>
+                <span class="method-start">147148 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">61741 ms</span>
+                <span class="method-start">147784 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
