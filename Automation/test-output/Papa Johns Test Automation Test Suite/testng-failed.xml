@@ -8,8 +8,12 @@
     <classes>
       <class name="com.pj.loyalty.testcases.HomePageTestCase">
         <methods>
-          <include name="verifyLoginTest" invocation-numbers="0 1"/>
+          <include name="verifyLoginTest"/>
+          <include name="verifyEnglishLocale"/>
+          <include name="verifySpanishLocale"/>
           <include name="tearDown"/>
+          <include name="verifyHomePageEnglishTitleTest"/>
+          <include name="verifyHomePageSpanishTitleTest"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.pj.loyalty.testcases.HomePageTestCase -->

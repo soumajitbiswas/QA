@@ -1,109 +1,423 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
+<testng-results skipped="6" failed="0" ignored="0" total="6" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Papa Johns Test Automation Test Suite" duration-ms="76801" started-at="2018-04-25T00:51:17Z" finished-at="2018-04-25T00:52:34Z">
+  <suite name="Papa Johns Test Automation Test Suite" duration-ms="3384" started-at="2018-04-25T01:15:11Z" finished-at="2018-04-25T01:15:15Z">
     <groups>
     </groups>
-    <test name="Papa Johns Test Cases" duration-ms="76801" started-at="2018-04-25T00:51:17Z" finished-at="2018-04-25T00:52:34Z">
+    <test name="Papa Johns Test Cases" duration-ms="3384" started-at="2018-04-25T01:15:11Z" finished-at="2018-04-25T01:15:15Z">
       <class name="com.pj.loyalty.testcases.HomePageTestCase">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="setUp" is-config="true" duration-ms="8112" started-at="2018-04-24T19:51:17Z" finished-at="2018-04-24T19:51:25Z">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="setUp" is-config="true" duration-ms="2914" started-at="2018-04-24T20:15:11Z" finished-at="2018-04-24T20:15:14Z">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[Malformed URL: =https://www.papajohns.com is not a valid URL.
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: Malformed URL: =https://www.papajohns.com is not a valid URL.
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+	at com.pj.loyalty.base.TestBase.initialization(TestBase.java:63)
+	at com.pj.loyalty.testcases.HomePageTestCase.setUp(HomePageTestCase.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyEnglishLocale()[pri:1, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="verifyEnglishLocale" duration-ms="4706" started-at="2018-04-24T19:51:25Z" finished-at="2018-04-24T19:51:30Z">
+        <test-method status="SKIP" signature="verifyEnglishLocale()[pri:1, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="verifyEnglishLocale" duration-ms="0" started-at="2018-04-24T20:15:14Z" finished-at="2018-04-24T20:15:14Z">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[Malformed URL: =https://www.papajohns.com is not a valid URL.
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: Malformed URL: =https://www.papajohns.com is not a valid URL.
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+	at com.pj.loyalty.base.TestBase.initialization(TestBase.java:63)
+	at com.pj.loyalty.testcases.HomePageTestCase.setUp(HomePageTestCase.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEnglishLocale -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="tearDown" is-config="true" duration-ms="825" started-at="2018-04-24T19:51:30Z" finished-at="2018-04-24T19:51:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="setUp" is-config="true" duration-ms="7919" started-at="2018-04-24T19:51:31Z" finished-at="2018-04-24T19:51:39Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-24T20:15:14Z" finished-at="2018-04-24T20:15:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageEnglishTitleTest()[pri:2, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="verifyHomePageEnglishTitleTest" duration-ms="5280" started-at="2018-04-24T19:51:39Z" finished-at="2018-04-24T19:51:44Z">
+        <test-method status="SKIP" signature="verifyHomePageEnglishTitleTest()[pri:2, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="verifyHomePageEnglishTitleTest" duration-ms="0" started-at="2018-04-24T20:15:14Z" finished-at="2018-04-24T20:15:14Z">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[Malformed URL: =https://www.papajohns.com is not a valid URL.
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: Malformed URL: =https://www.papajohns.com is not a valid URL.
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+	at com.pj.loyalty.base.TestBase.initialization(TestBase.java:63)
+	at com.pj.loyalty.testcases.HomePageTestCase.setUp(HomePageTestCase.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageEnglishTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="tearDown" is-config="true" duration-ms="785" started-at="2018-04-24T19:51:44Z" finished-at="2018-04-24T19:51:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="setUp" is-config="true" duration-ms="9413" started-at="2018-04-24T19:51:45Z" finished-at="2018-04-24T19:51:54Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-24T20:15:14Z" finished-at="2018-04-24T20:15:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySpanishLocale()[pri:3, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="verifySpanishLocale" duration-ms="6073" started-at="2018-04-24T19:51:54Z" finished-at="2018-04-24T19:52:00Z">
+        <test-method status="SKIP" signature="verifySpanishLocale()[pri:3, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="verifySpanishLocale" duration-ms="0" started-at="2018-04-24T20:15:14Z" finished-at="2018-04-24T20:15:14Z">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[Malformed URL: =https://www.papajohns.com is not a valid URL.
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: Malformed URL: =https://www.papajohns.com is not a valid URL.
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+	at com.pj.loyalty.base.TestBase.initialization(TestBase.java:63)
+	at com.pj.loyalty.testcases.HomePageTestCase.setUp(HomePageTestCase.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySpanishLocale -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="tearDown" is-config="true" duration-ms="804" started-at="2018-04-24T19:52:00Z" finished-at="2018-04-24T19:52:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="setUp" is-config="true" duration-ms="9117" started-at="2018-04-24T19:52:01Z" finished-at="2018-04-24T19:52:10Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-24T20:15:14Z" finished-at="2018-04-24T20:15:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageSpanishTitleTest()[pri:4, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="verifyHomePageSpanishTitleTest" duration-ms="4413" started-at="2018-04-24T19:52:10Z" finished-at="2018-04-24T19:52:15Z">
+        <test-method status="SKIP" signature="verifyHomePageSpanishTitleTest()[pri:4, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="verifyHomePageSpanishTitleTest" duration-ms="0" started-at="2018-04-24T20:15:14Z" finished-at="2018-04-24T20:15:14Z">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
+            <message>
+              <![CDATA[Malformed URL: =https://www.papajohns.com is not a valid URL.
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: Malformed URL: =https://www.papajohns.com is not a valid URL.
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+	at com.pj.loyalty.base.TestBase.initialization(TestBase.java:63)
+	at com.pj.loyalty.testcases.HomePageTestCase.setUp(HomePageTestCase.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageSpanishTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="tearDown" is-config="true" duration-ms="867" started-at="2018-04-24T19:52:15Z" finished-at="2018-04-24T19:52:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="setUp" is-config="true" duration-ms="8646" started-at="2018-04-24T19:52:16Z" finished-at="2018-04-24T19:52:24Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-24T20:15:15Z" finished-at="2018-04-24T20:15:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyLoginTest(java.lang.String, java.lang.String)[pri:5, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="verifyLoginTest" duration-ms="235" started-at="2018-04-24T19:52:24Z" data-provider="getSheet" finished-at="2018-04-24T19:52:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[soumajit.biswas@outlook.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[India@12]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.UnsupportedCommandException">
+        <test-method status="SKIP" signature="verifyLoginTest(java.lang.String, java.lang.String)[pri:5, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="verifyLoginTest" duration-ms="0" started-at="2018-04-24T20:15:15Z" data-provider="getSheet" finished-at="2018-04-24T20:15:15Z">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
             <message>
-              <![CDATA[mouseMoveTo
+              <![CDATA[Malformed URL: =https://www.papajohns.com is not a valid URL.
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnsupportedCommandException: mouseMoveTo
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: Malformed URL: =https://www.papajohns.com is not a valid URL.
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:222)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:119)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:35)
-	at org.openqa.selenium.remote.RemoteMouse.mouseMove(RemoteMouse.java:89)
-	at org.openqa.selenium.support.events.internal.EventFiringMouse.mouseMove(EventFiringMouse.java:58)
-	at org.openqa.selenium.interactions.internal.MouseAction.moveToLocation(MouseAction.java:75)
-	at org.openqa.selenium.interactions.ClickAction.perform(ClickAction.java:39)
-	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
-	at com.pj.loyalty.pages.HomePage.Login(HomePage.java:28)
-	at com.pj.loyalty.testcases.HomePageTestCase.verifyLoginTest(HomePageTestCase.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+	at com.pj.loyalty.base.TestBase.initialization(TestBase.java:63)
+	at com.pj.loyalty.testcases.HomePageTestCase.setUp(HomePageTestCase.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -125,63 +439,59 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="tearDown" is-config="true" duration-ms="863" started-at="2018-04-24T19:52:25Z" finished-at="2018-04-24T19:52:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="setUp" is-config="true" duration-ms="7506" started-at="2018-04-24T19:52:26Z" finished-at="2018-04-24T19:52:33Z">
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="setUp" is-config="true" duration-ms="0" started-at="2018-04-24T20:15:15Z" finished-at="2018-04-24T20:15:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyLoginTest(java.lang.String, java.lang.String)[pri:5, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="verifyLoginTest" duration-ms="123" started-at="2018-04-24T19:52:33Z" data-provider="getSheet" finished-at="2018-04-24T19:52:33Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[soumajit.biswas@outlook.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[India@123]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.UnsupportedCommandException">
+        <test-method status="SKIP" signature="verifyLoginTest(java.lang.String, java.lang.String)[pri:5, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="verifyLoginTest" duration-ms="6" started-at="2018-04-24T20:15:15Z" data-provider="getSheet" finished-at="2018-04-24T20:15:15Z">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
             <message>
-              <![CDATA[mouseMoveTo
+              <![CDATA[Malformed URL: =https://www.papajohns.com is not a valid URL.
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnsupportedCommandException: mouseMoveTo
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: Malformed URL: =https://www.papajohns.com is not a valid URL.
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
 System info: host: 'Soumajits-MacBook-Pro.local', ip: '2601:243:1500:f58d:0:0:0:7275', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:222)
-	at org.openqa.selenium.remote.http.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:119)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=/var/folders/yl/gkb5jkr92zzc90vgtdxgfyfm0000gn/T/rust_mozprofile.4a3u9CjLH122, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, moz:headless=false, platform=MAC, moz:accessibilityChecks=false, moz:useNonSpecCompliantPointerOrigin=false, acceptInsecureCerts=false, browserVersion=59.0.2, platformVersion=17.5.0, moz:processID=5929, browserName=firefox, javascriptEnabled=true, platformName=MAC, moz:webdriverClick=true}]
+Session ID: 7dfe242f-3c59-e649-82bb-0fa7bb582701
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
-	at org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:35)
-	at org.openqa.selenium.remote.RemoteMouse.mouseMove(RemoteMouse.java:89)
-	at org.openqa.selenium.support.events.internal.EventFiringMouse.mouseMove(EventFiringMouse.java:58)
-	at org.openqa.selenium.interactions.internal.MouseAction.moveToLocation(MouseAction.java:75)
-	at org.openqa.selenium.interactions.ClickAction.perform(ClickAction.java:39)
-	at org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:36)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:641)
-	at com.pj.loyalty.pages.HomePage.Login(HomePage.java:28)
-	at com.pj.loyalty.testcases.HomePageTestCase.verifyLoginTest(HomePageTestCase.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:164)
+	at com.pj.loyalty.base.TestBase.initialization(TestBase.java:63)
+	at com.pj.loyalty.testcases.HomePageTestCase.setUp(HomePageTestCase.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -203,14 +513,10 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.pj.loyalty.testcases.HomePageTestCase@2f686d1f]" name="tearDown" is-config="true" duration-ms="721" started-at="2018-04-24T19:52:33Z" finished-at="2018-04-24T19:52:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- com.pj.loyalty.testcases.HomePageTestCase -->
     </test> <!-- Papa Johns Test Cases -->
   </suite> <!-- Papa Johns Test Automation Test Suite -->
