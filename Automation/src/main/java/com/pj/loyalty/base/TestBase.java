@@ -47,7 +47,8 @@ public class TestBase {
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", "/Users/soumajitbiswas/git/QA/Automation/src/main/java/com/pj/loyalty/util/geckodriver_MAC64"); 
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
+					+"/src/main/java/com/pj/loyalty/util/geckodriver_MAC64"); 
 			driver= new FirefoxDriver();
 		}
 		
