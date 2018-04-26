@@ -49,14 +49,7 @@ public class TestBase {
 		else if(browserName.equals("FF")){
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
 					+ "/src/main/java/com/pj/loyalty/util/geckodriver_MAC64"); 
-			
-			FirefoxBinary binary = new FirefoxBinary();
-			DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-			capabilities.setCapability("marionette", true);
-			FirefoxOptions firefoxOptions = new FirefoxOptions(capabilities);
-			firefoxOptions.setBinary(binary);
-			firefoxOptions.addArguments("--display=9999");
-			driver= new FirefoxDriver(firefoxOptions);
+			driver= new FirefoxDriver();
 		}
 		
 		
