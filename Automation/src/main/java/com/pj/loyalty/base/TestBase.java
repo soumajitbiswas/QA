@@ -38,16 +38,39 @@ public class TestBase {
 	public static void initialization(){
 		String browserName = prop.getProperty("browser");
 		
-		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
-					+"/src/main/java/com/pj/loyalty/util/chromedriver_MAC64");	
-			driver = new ChromeDriver(); 
+		
+		if(System.getProperty("os.name").toLowerCase().contains("mac")) {
+			if(browserName.equals("chrome")){
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
+						+"/src/main/java/com/pj/loyalty/util/chromedriver_MAC64");	
+				driver = new ChromeDriver(); 
+			}
+			else if(browserName.equals("FF")){
+				System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
+						+"/src/main/java/com/pj/loyalty/util/geckodriver_MAC64"); 
+				driver= new FirefoxDriver();
+			}	
+		}else if (System.getProperty("os.name").toLowerCase().contains("win")){
+			if(browserName.equals("chrome")) {
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
+						+"/src/main/java/com/pj/loyalty/util/chromedriver_WIN32.exe");	
+				driver = new ChromeDriver(); 
+			}
+			if(browserName.equals("FF")) {
+				if(System.getProperty("os.arch").contains("32")) {
+					System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
+							+"/src/main/java/com/pj/loyalty/util/geckodriver_WIN32.exe"); 
+					driver= new FirefoxDriver();
+				}else {
+					System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
+							+"/src/main/java/com/pj/loyalty/util/geckodriver_WIN64.exe"); 
+					driver= new FirefoxDriver();
+				}
+					
+			}
 		}
-		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")
-					+"/src/main/java/com/pj/loyalty/util/geckodriver_MAC64"); 
-			driver= new FirefoxDriver();
-		}
+		
+		
 		
 		
 		e_driver = new EventFiringWebDriver(driver);
