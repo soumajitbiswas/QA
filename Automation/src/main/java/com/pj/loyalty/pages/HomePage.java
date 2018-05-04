@@ -48,6 +48,7 @@ public class HomePage extends TestBase{
 	}
 	
 	public void selectSpanishLocale() {
+		
 		LocaleLink.click();
 		WebElement spanishLink=driver.findElement(By.xpath("//div/ul/li/a[text()='Español']"));
 		spanishLink.click();

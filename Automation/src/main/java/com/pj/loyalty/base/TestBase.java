@@ -3,16 +3,25 @@ package com.pj.loyalty.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.pj.loyalty.util.WebEventListener;
 
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 
 public class TestBase {
 	
@@ -35,10 +44,93 @@ public class TestBase {
 	}
 	
 	
-	public static void initialization(){
+	public static void initialization() throws MalformedURLException{
+		
+		if(prop.getProperty("device").equalsIgnoreCase("PC")) {
+			initializePC();	
+		}else if(prop.getProperty("device").equalsIgnoreCase("mobile")) {
+			/*
+			AppiumServiceBuilder builder = new AppiumServiceBuilder();
+			DesiredCapabilities cap = new DesiredCapabilities();
+			cap.setCapability("noReset", "false");
+			cap.setCapability("platformName", prop.getProperty("phone_device_brand"));
+			cap.setCapability("platformVersion", prop.getProperty("phone_os_version"));
+			cap.setCapability("deviceName","MyDevice");
+			cap.setCapability("browserName", prop.getProperty("browser"));
+			cap.setCapability("avd", "MyDevice");
+			builder.withIPAddress("127.0.0.1");
+			builder.usingPort(4723);
+			builder.withCapabilities(cap);
+			AppiumDriverLocalService service = AppiumDriverLocalService.buildService(builder);
+			service.start();
+			*/
+			initializeMobile();
+		}
+		
+		e_driver = new EventFiringWebDriver(driver);
+		eventListener = new WebEventListener();
+		e_driver.register(eventListener);
+		driver = e_driver;
+		
+		//driver.manage().window().maximize();
+		//driver.manage().deleteAllCookies();
+		driver.manage().timeouts().pageLoadTimeout(Long.parseLong(prop.getProperty("page_loadtime")), TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Long.parseLong(prop.getProperty("implicit_timeout")), TimeUnit.SECONDS);
+
+		driver.get(prop.getProperty("url"));
+		
+	}
+	
+	public static void initializeMobile() throws MalformedURLException {
+		if(prop.getProperty("phone_device_brand").equalsIgnoreCase("android")) {
+			initializeAndroid();
+		}else if(prop.getProperty("phone_device_brand").equalsIgnoreCase("iphone")) {
+			initializeIPhone();
+		}
+	}
+	
+	public static void initializeAndroid() throws MalformedURLException {
+		DesiredCapabilities capabilities= DesiredCapabilities.android();
+		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
+		//capabilities.setCapability("noReset", true);
+		//capabilities.setCapability("fullReset", false);
+		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.1.1");
+		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "MyDevice");
+		capabilities.setCapability("showChromedriverLog", true);
+		
+		
+		//avdArgs capability to -no-window
+		//capabilities.setCapability("appPackage", "com.android.chrome");
+		//capabilities.setCapability("appActivity", "com.google.android.apps.chrome.Main");
+		//capabilities.setCapability("appWaitActivity", "*.SplashActivity");
+		
+		//capabilities.setCapability("avd", "AVD_for_Nexus_One_by_Google");
+		//capabilities.setCapability("chromedriverExecutable", System.getProperty("user.dir")+"/src/main/java/com/pj/loyalty/util/chromedriver_MAC64" );
+		
+		URL url=new URL(prop.getProperty("appium_server_address"));
+		
+		driver = new AndroidDriver(url,capabilities);
+		
+	}
+	
+	public static void initializeIPhone() throws MalformedURLException {
+		DesiredCapabilities capabilities= DesiredCapabilities.iphone();
+		capabilities.setCapability(CapabilityType.BROWSER_NAME, "safari");
+		capabilities.setCapability("deviceName", "iPhone 8");
+		capabilities.setCapability("platformName", "iOS");
+		capabilities.setCapability("platformVersion", "11.2");
+		//capabilities.setCapability("chromedriverExecutable", System.getProperty("user.dir")+"/src/main/java/com/pj/loyalty/util/chromedriver_MAC64" );
+		//capabilities.setCapability("appPackage", "com.android.chrome");
+		//capabilities.setCapability("appActivity", "com.google.android.apps.chrome.Main");
+		capabilities.setCapability("autoWebview", true);
+		capabilities.setCapability("autoWebviewTimeout", "3000");
+		URL url=new URL(prop.getProperty("appium_server_address"));
+		driver = new IOSDriver(url,capabilities);
+	}
+	
+	public static void initializePC() {
 		String browserName = prop.getProperty("browser");
-		
-		
 		if(System.getProperty("os.name").toLowerCase().contains("mac")) {
 			if(browserName.equals("chrome")){
 				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
@@ -69,21 +161,6 @@ public class TestBase {
 					
 			}
 		}
-		
-		
-		
-		
-		e_driver = new EventFiringWebDriver(driver);
-		eventListener = new WebEventListener();
-		e_driver.register(eventListener);
-		driver = e_driver;
-		
-		//driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(Long.parseLong(prop.getProperty("page_loadtime")), TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(Long.parseLong(prop.getProperty("implicit_timeout")), TimeUnit.SECONDS);
-
-		driver.get(prop.getProperty("url"));
 		
 	}
 	
