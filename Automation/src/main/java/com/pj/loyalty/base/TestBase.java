@@ -8,7 +8,6 @@ import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -18,10 +17,8 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.pj.loyalty.util.WebEventListener;
 
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
 
 public class TestBase {
 	
@@ -91,23 +88,21 @@ public class TestBase {
 	
 	public static void initializeAndroid() throws MalformedURLException {
 		DesiredCapabilities capabilities= DesiredCapabilities.android();
-		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
-		//capabilities.setCapability("noReset", true);
-		//capabilities.setCapability("fullReset", false);
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.1.1");
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "MyDevice");
-		capabilities.setCapability("showChromedriverLog", true);
-		
+		capabilities.setCapability("browserName", "chrome");
+		capabilities.setCapability("noReset", true);
+		capabilities.setCapability("fullReset", false);
+		capabilities.setCapability("deviceName", "MyDevice");
+		capabilities.setCapability("platformName", "Android");
+		capabilities.setCapability("platformVersion", "7.1.1");
+		capabilities.setCapability("app", System.getProperty("user.dir")+"/src/main/java/com/pj/loyalty/util/com.android.chrome_66.0.3359.126-335912612_minAPI24(x86)(nodpi)_apkmirror.com.apk");
 		
 		//avdArgs capability to -no-window
 		//capabilities.setCapability("appPackage", "com.android.chrome");
 		//capabilities.setCapability("appActivity", "com.google.android.apps.chrome.Main");
 		//capabilities.setCapability("appWaitActivity", "*.SplashActivity");
+		capabilities.setCapability("chromedriverExecutable", System.getProperty("user.dir")+"/src/main/java/com/pj/loyalty/util/chromedriver_MAC64" );
 		
-		//capabilities.setCapability("avd", "AVD_for_Nexus_One_by_Google");
-		//capabilities.setCapability("chromedriverExecutable", System.getProperty("user.dir")+"/src/main/java/com/pj/loyalty/util/chromedriver_MAC64" );
-		
+		capabilities.setCapability("avd", "AVD_for_Nexus_One_by_Google");
 		URL url=new URL(prop.getProperty("appium_server_address"));
 		
 		driver = new AndroidDriver(url,capabilities);
@@ -120,11 +115,11 @@ public class TestBase {
 		capabilities.setCapability("deviceName", "iPhone 8");
 		capabilities.setCapability("platformName", "iOS");
 		capabilities.setCapability("platformVersion", "11.2");
-		//capabilities.setCapability("chromedriverExecutable", System.getProperty("user.dir")+"/src/main/java/com/pj/loyalty/util/chromedriver_MAC64" );
-		//capabilities.setCapability("appPackage", "com.android.chrome");
-		//capabilities.setCapability("appActivity", "com.google.android.apps.chrome.Main");
-		capabilities.setCapability("autoWebview", true);
-		capabilities.setCapability("autoWebviewTimeout", "3000");
+		capabilities.setCapability("chromedriverExecutable", System.getProperty("user.dir")+"/src/main/java/com/pj/loyalty/util/chromedriver_MAC64" );
+		capabilities.setCapability("appPackage", "com.android.chrome");
+		capabilities.setCapability("appActivity", "com.google.android.apps.chrome");
+		//capabilities.setCapability("autoWebview", true);
+		//capabilities.setCapability("autoWebviewTimeout", "3000");
 		URL url=new URL(prop.getProperty("appium_server_address"));
 		driver = new IOSDriver(url,capabilities);
 	}
